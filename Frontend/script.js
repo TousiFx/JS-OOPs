@@ -18,7 +18,22 @@
 
 //   return person;
 // }
-function person(name, age) {
-  this.name = name;
-  this.age = age;
+// function person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+// person.prototype.talk = () => {
+//   console.log(`Hello! , my name is ${this.name}`);
+// };
+
+class person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  talk() {
+    console.log(`Hello! , my name is ${this.name}`);
+  }
 }
+let p1 = new person("adam", 25);
+let p2 = new person("adam", 25);
